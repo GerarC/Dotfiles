@@ -19,7 +19,9 @@ neovim
 qtile
 ranger
 rofi
+rofi-power-menu-git
 zathura
+zathura-pdf-mupdf
 zsh
 alsamixer
 alsa-utils
@@ -29,6 +31,7 @@ bluez
 bluez-tools
 gnome-screenshot
 go
+mpv
 network-manager-applet
 nodejs
 npm
@@ -40,10 +43,26 @@ python-psutil
 ueberzug
 ~~~
     
-Optional Dependencies:
+Optional things:
 ~~~
 qutebrowser
 tmux
+clang
+ayright
+lua-language-server
+typescript-language-server
+vscode-css-languageserver
+vscode-html-languageserver
+~~~
+
+With yay you have install:
+~~~ bash
+picom-tryone-git
+cava-git
+cmatrix-git
+btop-git
+xwinwrap-0.9-bin
+spicetify
 ~~~
 
 ## Zsh
@@ -52,20 +71,20 @@ To get working Zsh first you need to install [Oh My Zsh](https://ohmyz.sh/). Onc
 ## To Do
 ### Personalizing Applications
 - [ ] Qtile
-- [ ] Zathura
-- [ ] Dunst
+- [x] Zathura
+- [x] Dunst
 - [ ] Nvim
-- [ ] Ranger
-- [ ] Kitty
+- [x] Ranger
+- [x] Kitty
 - [ ] Rofi
 - [ ] Firefox
 - [ ] Qutebrowser
-- [ ] Picom
+- [x] Picom
 - [ ] Conky
-- [ ] Zsh
+- [x] Zsh
 - [ ] Tmux
-- [ ] Wallpapers
-- [ ] Miscelaneous Configurations
+- [x] Wallpapers
+- [x] Miscelaneous Configurations
 
 ### General
 - [ ] Explain Configuration
