@@ -48,7 +48,7 @@ Optional things:
 qutebrowser
 tmux
 clang
-ayright
+pyright
 lua-language-server
 typescript-language-server
 vscode-css-languageserver
