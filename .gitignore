@@ -1,6 +1,9 @@
 # Obsidian Folder 
 .obsidian/
 
-#
+# Qtile
 qtile/*/__pycache__/
-qtile/__pycache__
+qtile/__pycache__/
+
+# Neovim
+nvim/undodir/

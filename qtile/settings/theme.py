@@ -5,9 +5,9 @@ from settings.colorscheme import palette
 #####################################################################
 
 fonts = {
-    'default': 'Ubuntu Mono Nerd Font',
+    'default': 'CaskaydiaCove Nerd Font',
     'powerline': 'Source Code Pro',
-    'size': 18
+    'size': 14
 }
 
 bar_theme = {
@@ -68,6 +68,8 @@ icons = {
     'updates': ' ',
     'speed': ' 龍 ',
     'volume': ' ',
+    'power': ' ',
+    'terminal': '  '
 }
 
 layout_colors = {

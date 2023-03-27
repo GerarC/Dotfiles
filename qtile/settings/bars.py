@@ -80,7 +80,7 @@ main_bar = bar.Bar(
             },
         ),
         widget.TextBox(
-            text='  ', # nf-oct-terminal
+            text=icons['terminal'], # nf-oct-terminal
             fontsize=icons['size'],
             foreground=theme['foreground'],
             background=group_colors[2],
@@ -113,7 +113,17 @@ main_bar = bar.Bar(
             foreground=theme['foreground'],
             background=group_colors[4]
         ),
-        set_icon(' ', group_colors[4]),
+        set_icon('│', group_colors[4]),
+        widget.TextBox(
+            text=icons['power'], # nf-oct-terminal
+            fontsize=icons['size'],
+            foreground=theme['foreground'],
+            background=group_colors[4],
+            mouse_callbacks={
+                'Button1': lazy.spawn(power_menu),
+                'Button3': lazy.spawn(power_menu),
+            }
+        ),
     ],
     24,
 )

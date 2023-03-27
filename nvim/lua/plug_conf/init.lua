@@ -1,0 +1,8 @@
+require('plug_conf.rosepine')
+require('plug_conf.bufferline')
+require('plug_conf.nerdtree')
+require('plug_conf.indentlines')
+require('plug_conf.telescope')
+require('plug_conf.toggleterm')
+require('plug_conf.dap')
+require('plug_conf.alpha')

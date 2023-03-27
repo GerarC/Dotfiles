@@ -1,0 +1,10 @@
+# Clipboard
+set selection-clipboard clipboard
+
+# Sanbox
+# set sandbox strict
+
+include rose_pine
+# include total-spaceduck
+
+# You can change the total or not, using Ctrl + R
