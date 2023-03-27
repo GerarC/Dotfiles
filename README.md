@@ -1,6 +1,8 @@
 # Gerar's Dotfiles
 This is the site where I save all the configurations of the programs I use. Also is where I save my rices.
 
+**In this moment, I'm Using [Rosé Pine](https://github.com/rose-pine/rose-pine-theme) Color Scheme**
+
 ## Dependencies
 Programs needed to put it to work.
 **Command to Install them on Arch**
@@ -25,6 +27,8 @@ brightnessctl
 blueberry
 bluez
 bluez-tools
+gnome-screenshot
+go
 network-manager-applet
 nodejs
 npm
@@ -33,7 +37,7 @@ pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
 python-psutil
-gnome-screenshot
+ueberzug
 ~~~
     
 Optional Dependencies:

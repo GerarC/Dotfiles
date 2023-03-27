@@ -1,2 +1,6 @@
 # Obsidian Folder 
 .obsidian/
+
+#
+qtile/*/__pycache__/
+qtile/__pycache__
