@@ -1,0 +1,3 @@
+ln -s <file to link> <link name>
+
+nohup <command> > /dev/null & (> /dev/null is for take nohup out and send it to the nothing, ergo, it doesn't create a file)
