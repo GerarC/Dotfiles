@@ -1,5 +1,6 @@
 # Gerar's Dotfiles
-This is the site where I save all the configurations of the programs I use. Also is where I save my rices.
+This is the site where I save all the configurations of the programs I use.
+Also is where I save my rices.
 
 **In this moment, I'm Using [Rosé Pine](https://github.com/rose-pine/rose-pine-theme) Color Scheme**
 
@@ -13,6 +14,7 @@ Programs needed to put it to work.
 ~~~ bash
 sudo pacman -S <dependencies>
 ~~~    
+    
 Where the dependencies are:   
 ~~~
 conky
@@ -34,15 +36,19 @@ bluez
 bluez-tools
 gnome-screenshot
 go
+gsimplecal
 mpv
 network-manager-applet
 nodejs
 npm
+otf-cascadia-code-nerd
 playerctl
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
 python-psutil
+ttf-sourcecodepro-nerd
+ttf-ubuntu-mono-nerd
 ueberzug
 ~~~
     
@@ -59,6 +65,7 @@ rofi-power-menu-git
     
 Optional things:
 ~~~
+glow
 qutebrowser
 tmux
 clang
@@ -69,8 +76,11 @@ vscode-css-languageserver
 vscode-html-languageserver
 ~~~
 
+## Firefox
+On firefox go to `about:config` dir and change `toolkit.legacyUserProfileCustomizations.stylesheets` option to `true`.
+
 ## Zsh
-To get working Zsh first you need to install [Oh My Zsh](https://ohmyz.sh/). Once you've installed OMZ then you need to install     [Powerlevel](https://github.com/romkatv/powerlevel10k#oh-my-zsh), [Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) and finally [Highlighting](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh).
+To get working Zsh first you need to install [Oh My Zsh](https://ohmyz.sh/). Once you've installed OMZ then you need to install [Powerlevel](https://github.com/romkatv/powerlevel10k#oh-my-zsh), [Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) and finally [Highlighting](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh).
 
 ## To Do
 ### Personalizing Applications
@@ -81,14 +91,14 @@ To get working Zsh first you need to install [Oh My Zsh](https://ohmyz.sh/). Onc
 - [x] Ranger
 - [x] Kitty
 - [ ] Rofi
-- [ ] Firefox
+- [x] Firefox
 - [ ] Qutebrowser
 - [x] Picom
 - [ ] Conky
 - [x] Zsh
 - [ ] Tmux
 - [x] Wallpapers
-- [x] Miscelaneous Configurations
+- [ ] Miscelaneous Configurations
 
 ### General
 - [ ] Explain Configuration

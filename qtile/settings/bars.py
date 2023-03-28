@@ -43,6 +43,11 @@ main_bar = bar.Bar(
             background=window_name['background'],
             max_chars=window_name['max_chars']
         ),
+        # widget.Spacer(
+        #     foreground=window_name['text_color'],
+        #     background=window_name['background'],
+        # ),
+        set_icon(' ', window_name['background']),
 
         # Group One
         section_corner(group_colors[1], window_name['background'], 3),
@@ -127,4 +132,3 @@ main_bar = bar.Bar(
     ],
     24,
 )
-

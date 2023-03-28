@@ -30,7 +30,7 @@ group_box = {
     'background': palette[0],
     'active': palette[5],
     'inactive': palette[4],
-    'urgent_color': palette[13],
+    'urgent_color': palette[10],
     'this_current_screen_border': palette[9],
     'this_screen_border': palette[5],
     'other_current_screen_border': palette[5],
@@ -49,7 +49,7 @@ window_name = {
 
 group_colors = {
     1: palette[15],
-    2: palette[12],
+    2: palette[10],
     3: palette[13],
     4: palette[14],
 }
