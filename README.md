@@ -3,6 +3,10 @@ This is the site where I save all the configurations of the programs I use. Also
 
 **In this moment, I'm Using [Rosé Pine](https://github.com/rose-pine/rose-pine-theme) Color Scheme**
 
+## Screenshots
+![](./assets/example_1.png)
+![](./assets/example_2.png)
+
 ## Dependencies
 Programs needed to put it to work.
 **Command to Install them on Arch**
@@ -19,7 +23,6 @@ neovim
 qtile
 ranger
 rofi
-rofi-power-menu-git
 zathura
 zathura-pdf-mupdf
 zsh
@@ -43,6 +46,17 @@ python-psutil
 ueberzug
 ~~~
     
+With yay you have install:
+~~~ bash
+picom-tryone-git
+cava-git
+cmatrix-git
+btop-git
+xwinwrap-0.9-bin
+spicetify
+rofi-power-menu-git
+~~~
+    
 Optional things:
 ~~~
 qutebrowser
@@ -55,18 +69,8 @@ vscode-css-languageserver
 vscode-html-languageserver
 ~~~
 
-With yay you have install:
-~~~ bash
-picom-tryone-git
-cava-git
-cmatrix-git
-btop-git
-xwinwrap-0.9-bin
-spicetify
-~~~
-
 ## Zsh
-To get working Zsh first you need to install [Oh My Zsh](https://ohmyz.sh/). Once you've installed OMZ then you need to install [Powerlevel](https://github.com/romkatv/powerlevel10k#oh-my-zsh), [Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) and finally [Highlighting](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh).
+To get working Zsh first you need to install [Oh My Zsh](https://ohmyz.sh/). Once you've installed OMZ then you need to install     [Powerlevel](https://github.com/romkatv/powerlevel10k#oh-my-zsh), [Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) and finally [Highlighting](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh).
 
 ## To Do
 ### Personalizing Applications
