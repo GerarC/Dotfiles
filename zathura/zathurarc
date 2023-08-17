@@ -1,10 +1,27 @@
-# Clipboard
+#########################################################################
+# Options
+#########################################################################
 set selection-clipboard clipboard
+set font "CaskaydiaCove Nerd Font 12"
+set adjust-open "best-fit"
+set window-title-basename true
+set window-title-home-tilde true
+# set statusbar-basename true
+# set window-title-page true
+set highlight-transparency 0.8
+set sandbox none
 
-# Sanbox
-# set sandbox strict
+set synctex true
+set synctex-editor-command "nvim +%{line} %{input}"
 
+#########################################################################
+# Maps
+#########################################################################
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+
+#########################################################################
+# Theme
+#########################################################################
 include rose_pine
-# include total-spaceduck
-
 # You can change the total or not, using Ctrl + R

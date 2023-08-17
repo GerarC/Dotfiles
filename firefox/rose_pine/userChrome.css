@@ -20,7 +20,7 @@
   --mff-sidebar-color: #F1CA93;
   --mff-tab-border-radius: 0px;
   --mff-tab-color: #EA6F91;
-  --mff-tab-font-family: "FiraCode Nerd Font";
+  --mff-tab-font-family: "CaskaydiaCove Nerd Font";
   --mff-tab-font-size: 11pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
@@ -29,11 +29,11 @@
   --mff-tab-soundplaying-bg: #9c89b8;
   --mff-urlbar-color: #98c1d9;
   --mff-urlbar-focused-color: #403C58;
-  --mff-urlbar-font-family: "Fira Code";
+  --mff-urlbar-font-family: "CaskaydiaCove Mono Nerd Font";
   --mff-urlbar-font-size: 11pt;
   --mff-urlbar-font-weight: 700;
   --mff-urlbar-results-color: #F1CA93;
-  --mff-urlbar-results-font-family: "Fira Code";
+  --mff-urlbar-results-font-family: "CaskaydiaCove Mono Nerd Font";
   --mff-urlbar-results-font-size: 11pt;
   --mff-urlbar-results-font-weight: 700;
   --mff-urlbar-results-url-color: #98c1d9;
@@ -66,6 +66,9 @@
 #urlbar-background, .titlebar-buttonbox-container, #nav-bar, .tabbrowser-tab:not([selected]) .tab-background{
     background: var(--uc-bg-color) !important;
   border: none !important;
+}
+.tab-background[selected="true"] {
+    background-color: var(--mff-tab-selected-bg) !important;
 }
 #urlbar[breakout][breakout-extend] {
     top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;

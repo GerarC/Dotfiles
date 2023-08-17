@@ -4,6 +4,7 @@
 # Qtile
 qtile/*/__pycache__/
 qtile/__pycache__/
+**/**/__pycache__/
 
 # Neovim
 nvim/undodir/

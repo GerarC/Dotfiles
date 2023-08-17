@@ -1,5 +1,5 @@
 * {
-  font:   "CaskaydiaCove Font Medium 12";
+  font:   "CaskaydiaCove Nerd Font Medium 13";
 
   bg0     : #191724;
   bg1     : #1f1d2e;
@@ -15,8 +15,8 @@
   magenta : #524f67;
   cyan    : #9ccfd8;
 
-  accent: @red;
-  urgent: @yellow;
+  accent: @yellow;
+  urgent: @red;
 
   background-color : transparent;
   text-color       : @fg0;
@@ -34,7 +34,7 @@ window {
   location : northeast;
   width    : 380px;
   x-offset : -7px;
-  y-offset : 26px;
+  y-offset : 31 px;
 
   background-color: @bg1;
   border: 0px;

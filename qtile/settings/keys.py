@@ -75,11 +75,17 @@ keys = [
     # Browser
     Key([mod], 'b', lazy.spawn(browser), desc='Launch firefox'),
 
+    # Bluetooth
+    Key([mod, shift], 'b', lazy.spawn(bluetooth_manager), desc='Launch bluetooth manager'),
+
+    # Clipboard Manager
+    Key([mod], 'c', lazy.spawn(clipboard_manager), desc='Launch clipboard manager'),
+
     # File Manager
     Key([mod], 'f', lazy.spawn(file_manager), desc='Launch Ranger file explorer'),
 
     # Email
-    Key([mod], 'c', lazy.spawn(mailing), desc='Launch Thunderbird'),
+    # Key([mod], 'c', lazy.spawn(mailing), desc='Launch Thunderbird'),
 
     # Graphical Editor
     Key([mod], 'e', lazy.spawn(gui_editor), desc='Launch Neovide'),
@@ -96,11 +102,11 @@ keys = [
     # PDF Viewer
     Key([mod], 'z', lazy.spawn(pdf_viewer), desc='Lauch Zathura'),
 
+    # Pavucontrol
+    Key([mod], 'p', lazy.spawn(sound_center), desc='Launch Volume center'),
+
     # Screenkey
     Key([mod, ctrl], 'p', lazy.spawn('screenkey'), desc='Launch screenkey app'),
-
-    # Pavucontrol
-    Key([mod], 'p', lazy.spawn('pavucontrol'), desc='Launch Volume center'),
 
     # Rss
     Key([mod, ctrl], 'f', lazy.spawn('fluent-reader'), desc='Launch Fluent Reader'),
@@ -110,9 +116,6 @@ keys = [
 
     # QuteBrowser    
     Key([mod, ctrl], 'b', lazy.spawn('qutebrowser'), desc='Launch Qutebrowser'),
-
-    # Bluetooth
-    Key([mod, shift], 'b', lazy.spawn('blueberry'), desc='Launch bluetooth manager'),
 
     # Telegram 
     Key([mod], 't', lazy.spawn('telegram-desktop'), desc='Launch Telegram'),

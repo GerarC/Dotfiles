@@ -18,13 +18,13 @@ from libqtile.config import Group, Match
 
 groups = [
     Group('  '),
-    Group('  '),
-    Group('  '),
+    Group('  ', matches=[Match(wm_class=['firefox'])]),
+    Group('  ', matches=[Match(wm_class=['obsidian'])]),
     Group('  '),
     Group('  '),
     Group('  '),
     Group('  '),
-    Group('  ', matches=[Match(wm_class='thunderbird')]),
-    Group('  '),
+    Group('  ', matches=[Match(wm_class=['thunderbird'])]),
+    Group('  ', matches=[Match(wm_class=['TelegramDesktop']), Match(wm_class=['telegram-desktop'])]),
     Group('  '),
 ]

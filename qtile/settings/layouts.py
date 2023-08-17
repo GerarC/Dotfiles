@@ -27,6 +27,7 @@ layouts = [
     layout.Columns(**layout_theme),
     layout.Max(),
     layout.Tile(**layout_theme),
+    layout.MonadWide(**layout_theme),
     layout.TreeTab(
         active_bg=layout_colors['active'],
         active_fg=layout_colors['foreground'],

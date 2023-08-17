@@ -21,8 +21,8 @@ groups.extend([
 
                    ),
                    DropDown(
-                       'spot',
-                       'spotify',
+                       'music',
+                       music,
                        opacity=1,
                        height=0.75,
                        width=0.75,
@@ -31,7 +31,7 @@ groups.extend([
 
                    ),
                    DropDown(
-                       'pavu',
+                       'Sound Config',
                        'pavucontrol',
                        opacity=1,
                        height=0.6,

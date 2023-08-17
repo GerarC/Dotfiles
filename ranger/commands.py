@@ -1,10 +1,18 @@
-from __future__ import (absolute_import, division, print_function)
+from __future__ import (absolute_import, print_function)
 
 # You can import any python module as needed.
 import os
 
 # You always need to import ranger.api.commands here to get the Command class:
 from ranger.api.commands import Command
+
+class empty(Command):
+    """:empty
+
+    Empties the trash directory ~/.local/share/Trash
+    """
+    def execute(self):
+        self.fm.run("rm -rf ~/.local/share/Trash/{*,.[^.]*}")
 
 
 # Any class that is a subclass of "Command" will be integrated into ranger as a

@@ -95,7 +95,6 @@ main_bar = bar.Bar(
                 'Button3': lazy.spawn('alacritty'),
             }
         ),
-        set_icon(' ', group_colors[2]),
 
         # Group Three
         section_corner(group_colors[3], group_colors[2], 3),
@@ -103,10 +102,9 @@ main_bar = bar.Bar(
         widget.Clock(
             foreground=theme['foreground'],
             background=group_colors[3],
-            format=' %d/%m/%Y %a  %H:%M %p', 
+            format=' %A, %d %B │  %H:%M %p', 
             mouse_callbacks={
-                'Button1': lazy.spawn('gsimplecal'),
-                'Button3': lazy.spawn(terminal + ' --title Calendar -e khal interactive'),
+                'Button1': lazy.spawn(terminal + ' --title Clock -e tty-clock -csSB'),
             },
         ),
 

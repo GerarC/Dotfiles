@@ -39,8 +39,8 @@ groups.extend([
 
                    ),
                    DropDown(
-                       'spot',
-                       'spotify',
+                       'music',
+                       music,
                        opacity=1,
                        height=0.75,
                        width=0.75,
@@ -49,8 +49,8 @@ groups.extend([
 
                    ),
                    DropDown(
-                       'pavu',
-                       'pavucontrol',
+                       'sound_conf',
+                       sound_center,
                        opacity=1,
                        height=0.6,
                        width=0.6,
@@ -65,8 +65,8 @@ groups.extend([
 keys.extend(
     [
         Key([shift], 'F2', lazy.group['scratch'].dropdown_toggle('term')),
-        Key([shift], 'F10', lazy.group['scratch'].dropdown_toggle('spot')),
-        Key([alt], 'F2', lazy.group['scratch'].dropdown_toggle('pavu')),
+        Key([shift], 'F10', lazy.group['scratch'].dropdown_toggle('music')),
+        Key([alt], 'F2', lazy.group['scratch'].dropdown_toggle('sound_conf')),
     ]
 )
 
@@ -88,6 +88,7 @@ cursor_warp = False
 floating_layout = layout.Floating(
     float_rules=[
         *layout.Floating.default_float_rules,
+        Match(wm_class=clipboard_manager),
         Match(wm_class='confirmreset'),  # gitk
         Match(wm_class='makebranch'),  # gitk
         Match(wm_class='maketag'),  # gitk
@@ -103,7 +104,7 @@ focus_on_window_activation = 'smart'
 reconfigure_screens = True
 auto_minimize = True
 wl_input_rules = None
-wmname = "Qtile"
+wmname = "LG3D"
 
 #################################################################
 # HOOKS
