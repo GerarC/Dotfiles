@@ -102,7 +102,16 @@ main_bar = bar.Bar(
         widget.Clock(
             foreground=theme['foreground'],
             background=group_colors[3],
-            format=' %A, %d %B │  %H:%M %p', 
+            format=' %A, %d %B', 
+            mouse_callbacks={
+                'Button1': lazy.spawn(calendar),
+            },
+        ),
+        set_icon('│', group_colors[3]),
+        widget.Clock(
+            foreground=theme['foreground'],
+            background=group_colors[3],
+            format=' %H:%M %p', 
             mouse_callbacks={
                 'Button1': lazy.spawn(terminal + ' --title Clock -e tty-clock -csSB'),
             },

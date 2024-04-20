@@ -17,7 +17,7 @@ local on_attach = function(client, bufnr)
   local bufopts = { noremap=true, silent=true, buffer=bufnr }
   vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+  vim.keymap.set('n', 'gK', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
   -- vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
   vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
@@ -88,7 +88,7 @@ local lsp_flags = {
 }
 
 -- Enable some language servers with the additional completion capabilities
-local servers = { 'clangd', 'html', 'cssls', 'vuels', 'pyright', 'tsserver' }
+local servers = { 'clangd', 'html', 'cssls', 'vuels', 'pyright', 'tsserver', 'sqlls' }
 
 local lspconfig = require('lspconfig')
 for _, lsp in ipairs(servers) do

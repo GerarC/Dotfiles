@@ -26,15 +26,6 @@ alias npls='clear && neofetch && please'
 # File View
 alias token='cat ~/Documents/.token'
 
-# Brightness
-alias xb10='brightnessctl set 10%'
-alias xb20='brightnessctl set 20%'
-alias xb50='brightnessctl set 50%'
-alias xb80='brightnessctl set 80%'
-alias xb100='brightnessctl set 100%'
-alias xbinc='brightnessctl set +10%'
-alias xbdec='brightnessctl set 10%-'
-
 # Some configurations
 alias bton='sudo systemctl start bluetooth'
 alias dipv6='sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1'

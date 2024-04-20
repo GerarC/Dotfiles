@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Karbon, part of Calligra: http://www.calligra.org/karbon -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48pt" height="48pt">
+<defs>
+  <linearGradient id="gradient0" gradientTransform="" gradientUnits="objectBoundingBox" x1="0.48521580521" y1="1.33398484132" x2="0.51343771015" y2="-0.03632884408" spreadMethod="pad">
+   <stop stop-color="#000000" offset="0.09965698421" stop-opacity="0.00000000000"/>
+   <stop stop-color="#ffffff" offset="0.61518222094" stop-opacity="1.00000000000"/>
+  </linearGradient>
+  <linearGradient id="gradient1" gradientTransform="" gradientUnits="objectBoundingBox" x1="1.30838359808" y1="2.12944968281" x2="0.23932045807" y2="0.00000000000" spreadMethod="pad">
+   <stop stop-color="#ffffff" offset="0.62265940559" stop-opacity="1.00000000000"/>
+   <stop stop-color="#000000" offset="1.00000000000" stop-opacity="0.00000000000"/>
+  </linearGradient>
+  <linearGradient id="gradient2" gradientTransform="" gradientUnits="objectBoundingBox" x1="1.30838360000" y1="2.12944968000" x2="0.23932046000" y2="0.00000000000" spreadMethod="pad">
+   <stop stop-color="#ffffff" offset="0.62265900000" stop-opacity="1.00000000000"/>
+   <stop stop-color="#000000" offset="1.00000000000" stop-opacity="0.00000000000"/>
+  </linearGradient>
+  <linearGradient id="gradient3" gradientTransform="" gradientUnits="objectBoundingBox" x1="1.30838360000" y1="2.12944968000" x2="0.23932046000" y2="0.00000000000" spreadMethod="pad">
+   <stop stop-color="#ffffff" offset="0.62265900000" stop-opacity="1.00000000000"/>
+   <stop stop-color="#000000" offset="1.00000000000" stop-opacity="0.00000000000"/>
+  </linearGradient>
+ </defs>
+<g id="default">
+  <path id="path f" transform="matrix(0.907532 -0.419983 0.419983 0.907532 -4.75581 10.118)" fill="none" stroke="url(#gradient0)" stroke-width="2.67500000000" stroke-linecap="round" stroke-linejoin="round" d="M10.5341 0L0 24.2142C10.2368 27.1111 7.06246 31.7165 10.1872 31.6299C13.312 31.5432 10.2368 27.1111 20.5396 23.9834Z"/>
+  <circle id="shape0" transform="translate(10.9275, 23.6018)" r="2.30196328944pt" cx="2.30196328944pt" cy="2.30196328944pt" fill="url(#gradient1)" fill-rule="evenodd"/>
+  <path id="shape1" transform="matrix(0.868856 -0.495065 0.495065 0.868856 20.7217 29.9192)" fill="url(#gradient2)" fill-rule="evenodd" d="M5.75491 2.87745C5.75491 1.28828 4.46663 9.73056e-17 2.87745 0C1.28828 -9.73056e-17 1.94611e-16 1.28828 0 2.87745C-1.94611e-16 4.46663 1.28828 5.75491 2.87745 5.75491C4.46663 5.75491 5.75491 4.46663 5.75491 2.87745"/>
+  <path id="shape2" transform="matrix(0.868856 -0.495065 0.495065 0.868856 30.823 32.83)" fill="url(#gradient3)" fill-rule="evenodd" d="M5.75491 2.87745C5.75491 1.28828 4.46663 9.73056e-17 2.87745 0C1.28828 -9.73056e-17 1.94611e-16 1.28828 0 2.87745C-1.94611e-16 4.46663 1.28828 5.75491 2.87745 5.75491C4.46663 5.75491 5.75491 4.46663 5.75491 2.87745"/>
+ </g><g id="Busy"/>
+</svg>

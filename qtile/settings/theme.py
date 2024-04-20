@@ -63,7 +63,7 @@ float_window = {
 
 icons = {
     'size': 18,
-    'therm': ' ',
+    'therm': '  ',
     'ram': '  ',
     'updates': ' ',
     'speed': ' 龍 ',

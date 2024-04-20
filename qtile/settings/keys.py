@@ -3,6 +3,7 @@ from libqtile.command import lazy
 
 from settings.groups import groups
 from settings.common import *
+from settings.utils import brightness
 
 #################################################################
 # KEYS
@@ -55,8 +56,8 @@ keys = [
     Key([mod], 'F2', lazy.spawn('playerctl previous'), desc='Skip to previous'),
 
     # Screen
-    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%")),
-    Key([],"XF86MonBrightnessDown", lazy.spawn('brightnessctl set 5%-')),
+    Key([], "XF86MonBrightnessUp", lazy.function(brightness, '+5%')),
+    Key([],"XF86MonBrightnessDown", lazy.function(brightness, '5%-')),
     Key([shift], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
     Key([shift],"XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 
@@ -119,6 +120,9 @@ keys = [
 
     # Telegram 
     Key([mod], 't', lazy.spawn('telegram-desktop'), desc='Launch Telegram'),
+
+    # IntelliJ Idea
+    Key([mod], 'i', lazy.spawn('idea'), desc='Launch IntelliJ Idea'),
 ]
 
 for i, group in enumerate(groups):

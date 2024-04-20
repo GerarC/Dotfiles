@@ -60,6 +60,7 @@ setopt hist_reduce_blanks       # Remove extra blanks from each command added to
 ###########################################################
 # source ~/Dotfiles/zsh/aliases.sh
 source $DOTS/zsh/aliases.sh
+source $DOTS/zsh/brightness.sh
 source $DOTS/scripts/export-term.sh
 source $DOTS/scripts/rose-pine.sh
 

@@ -1,5 +1,10 @@
 from libqtile import widget
+from libqtile import qtile
+from libqtile.lazy import lazy
+from libqtile.log_utils import logger
+
 from settings.theme import *
+import subprocess
 
 #################################################################
 # CUSTOM FUNCTIONS
@@ -41,3 +46,10 @@ def set_icon(icon: str, group_color: str, mouse_callbacks={}):
         background=group_color,
         mouse_callbacks=mouse_callbacks,
     )
+
+def brightness(qtile, percentage):
+    commands = [
+        f"brightnessctl set {percentage}",
+        """notify-send "Bright" "$(brightnessctl | grep % | sed 's/^\\t\\w* \\w*: \\w* (\\(\\w*%\\))/Brightness at \\1/g')" -u low -h string:x-canonical-private-synchronous:my-notification;"""
+    ] 
+    for cmd in commands: subprocess.run([cmd], capture_output=True, text=True, check=True, shell=True)
