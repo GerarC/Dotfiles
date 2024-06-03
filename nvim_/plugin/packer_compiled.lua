@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/gerardc/.cache/nvim/packer_hererocks/2.1.1702233742/share/lua/5.1/?.lua;/home/gerardc/.cache/nvim/packer_hererocks/2.1.1702233742/share/lua/5.1/?/init.lua;/home/gerardc/.cache/nvim/packer_hererocks/2.1.1702233742/lib/luarocks/rocks-5.1/?.lua;/home/gerardc/.cache/nvim/packer_hererocks/2.1.1702233742/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/gerardc/.cache/nvim/packer_hererocks/2.1.1702233742/lib/lua/5.1/?.so"
+local package_path_str = "/home/gerardc/.cache/nvim/packer_hererocks/2.1.1713773202/share/lua/5.1/?.lua;/home/gerardc/.cache/nvim/packer_hererocks/2.1.1713773202/share/lua/5.1/?/init.lua;/home/gerardc/.cache/nvim/packer_hererocks/2.1.1713773202/lib/luarocks/rocks-5.1/?.lua;/home/gerardc/.cache/nvim/packer_hererocks/2.1.1713773202/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/gerardc/.cache/nvim/packer_hererocks/2.1.1713773202/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -89,11 +89,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gerardc/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
-  },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/home/gerardc/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -240,14 +235,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: vim-hexokinase
-time([[Config for vim-hexokinase]], true)
-try_loadstring("\27LJ\2\n”\1\0\0\2\0\6\0\t6\0\0\0009\0\1\0005\1\3\0=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0K\0\1\0\1\6\0\0\rfull_hex\brgb\trgba\bhsl\thsla\29Hexokinase_optInPatterns\1\2\0\0\19backgroundfull\28Hexokinase_highlighters\6g\bvim\0", "config", "vim-hexokinase")
-time([[Config for vim-hexokinase]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\n/\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\20plug_conf.alpha\frequire\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
+-- Config for: vim-hexokinase
+time([[Config for vim-hexokinase]], true)
+try_loadstring("\27LJ\2\n”\1\0\0\2\0\6\0\t6\0\0\0009\0\1\0005\1\3\0=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0K\0\1\0\1\6\0\0\rfull_hex\brgb\trgba\bhsl\thsla\29Hexokinase_optInPatterns\1\2\0\0\19backgroundfull\28Hexokinase_highlighters\6g\bvim\0", "config", "vim-hexokinase")
+time([[Config for vim-hexokinase]], false)
 -- Config for: nvim-lsp-installer
 time([[Config for nvim-lsp-installer]], true)
 try_loadstring("\27LJ\2\nD\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\23nvim-lsp-installer\frequire\0", "config", "nvim-lsp-installer")

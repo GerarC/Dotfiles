@@ -31,3 +31,4 @@ alias bton='sudo systemctl start bluetooth'
 alias dipv6='sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1'
 alias aipv6='sudo sysctl net.ipv6.conf.all.disable_ipv6=0 && sudo sysctl net.ipv6.conf.default.disable_ipv6=0'
 
+alias neov='nohup neovide . > /dev/null &'

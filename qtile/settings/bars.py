@@ -1,5 +1,5 @@
 from libqtile import bar, widget
-from libqtile.command import lazy
+from libqtile.lazy import lazy
 
 from settings.theme import *
 from settings.utils import *
