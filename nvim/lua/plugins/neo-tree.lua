@@ -19,6 +19,7 @@ return {
 				never_show = {},
 			},
 		})
-		vim.keymap.set("n", "<F7>", ":Neotree filesystem toggle left<cr>")
+		vim.keymap.set("n", "<F7>", "<cmd>Neotree filesystem toggle left<cr>")
+		vim.keymap.set("n", "<F5>", "<cmd>Neotree buffers toggle float<cr>")
 	end,
 }

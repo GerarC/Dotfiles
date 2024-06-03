@@ -46,8 +46,7 @@ return {
 			local datetime = os.date("%d-%m-%Y %H:%M:%S")
 			local plugins_text = "   "
 				.. plugin_count
-				.. " plugins"
-				.. "   v"
+				.. " plugins  v"
 				.. vim.version().major
 				.. "."
 				.. vim.version().minor
