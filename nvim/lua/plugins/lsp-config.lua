@@ -3,10 +3,14 @@ return {
         "williamboman/mason.nvim",
         config = function()
             require("mason").setup()
+		    vim.keymap.set("n", "<S-F12>", "<cmd>Mason<cr>")
         end,
     },
     {
         "folke/lsp-colors.nvim",
+        config = function()
+            require("lsp-colors").setup()
+        end,
     },
     {
         "williamboman/mason-lspconfig.nvim",
