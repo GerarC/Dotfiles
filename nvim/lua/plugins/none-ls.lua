@@ -8,8 +8,12 @@ return {
         null_ls.setup({
             sources = {
                 null_ls.builtins.formatting.stylua,
-                require("none-ls.diagnostics.eslint_d"),
-                null_ls.builtins.formatting.prettier,
+                require("none-ls.diagnostics.eslint_d").with {
+                    condition = function (utils)
+                        return utils.root_has_file "eslint.config.js"
+                    end
+                },
+                null_ls.builtins.formatting.prettierd,
                 null_ls.builtins.formatting.black,
                 null_ls.builtins.formatting.isort,
                 null_ls.builtins.formatting.clang_format.with({

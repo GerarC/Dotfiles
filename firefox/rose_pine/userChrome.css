@@ -1,45 +1,47 @@
-#fullscr-toggler { background-color: rgba(0, 0, 0, 0) !important; }
+#fullscr-toggler {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
 :root {
-  --uc-bg-color: #1F1D29;
+  --uc-bg-color: #191724;
   --uc-show-new-tab-button: none;
   --uc-show-tab-separators: none;
   --uc-tab-separators-color: none;
   --uc-tab-separators-width: none;
-  --uc-tab-fg-color: #9BCED7;
+  --uc-tab-fg-color: #e0def4;
   --autocomplete-popup-background: var(--mff-bg) !important;
   --default-arrowpanel-background: var(--mff-bg) !important;
-  --default-arrowpanel-color: #fefefa !important;
+  --default-arrowpanel-color: #e0def4 !important;
   --lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
-  --panel-disabled-color: #f9f9fa80;
+  --panel-disabled-color: #e0def480;
   --toolbar-bgcolor: var(--mff-bg) !important;
   --urlbar-separator-color: transparent !important;
-  --mff-bg: #1F1D29;
-  --mff-icon-color: #9BCED7;
+  --mff-bg: #191724;
+  --mff-icon-color: #e0def4;
   --mff-nav-toolbar-padding: 8px;
   --mff-sidebar-bg: var(--mff-bg);
-  --mff-sidebar-color: #F1CA93;
+  --mff-sidebar-color: #1f1d2e;
   --mff-tab-border-radius: 0px;
-  --mff-tab-color: #EA6F91;
+  --mff-tab-color: #ea6f92;
   --mff-tab-font-family: "CaskaydiaCove Nerd Font";
-  --mff-tab-font-size: 11pt;
+  --mff-tab-font-size: 12pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
-  --mff-tab-pinned-bg: #9BCED7;
-  --mff-tab-selected-bg: #403C58;
-  --mff-tab-soundplaying-bg: #9c89b8;
-  --mff-urlbar-color: #98c1d9;
-  --mff-urlbar-focused-color: #403C58;
+  --mff-tab-pinned-bg: #9bced7;
+  --mff-tab-selected-bg: #403c58;
+  --mff-tab-soundplaying-bg: #9ccfd8;
+  --mff-urlbar-color: #9ccfd8;
+  --mff-urlbar-focused-color: #403c58;
   --mff-urlbar-font-family: "CaskaydiaCove Mono Nerd Font";
-  --mff-urlbar-font-size: 11pt;
+  --mff-urlbar-font-size: 12pt;
   --mff-urlbar-font-weight: 700;
-  --mff-urlbar-results-color: #F1CA93;
+  --mff-urlbar-results-color: #1f1d29;
   --mff-urlbar-results-font-family: "CaskaydiaCove Mono Nerd Font";
-  --mff-urlbar-results-font-size: 11pt;
+  --mff-urlbar-results-font-size: 12pt;
   --mff-urlbar-results-font-weight: 700;
-  --mff-urlbar-results-url-color: #98c1d9;
+  --mff-urlbar-results-url-color: #9ccfd8;
 }
 
-#back-button > .toolbarbutton-icon{
+#back-button > .toolbarbutton-icon {
   --backbutton-background: transparent !important;
   border: none !important;
 }
@@ -55,36 +57,36 @@
 /* Options with pixel amounts could need to be adjusted, as this only works for my laptop's display */
 #titlebar {
   -moz-box-ordinal-group: 0 !important;
-} 
+}
 
 .tabbrowser-tab:not([fadein]),
-#tracking-protection-icon-container, 
+#tracking-protection-icon-container,
 #identity-box {
   display: none !important;
   border: none !important;
 }
-#urlbar-background, .titlebar-buttonbox-container, #nav-bar, .tabbrowser-tab:not([selected]) .tab-background{
-    background: var(--uc-bg-color) !important;
+#urlbar-background,
+.titlebar-buttonbox-container,
+#nav-bar,
+.tabbrowser-tab:not([selected]) .tab-background {
+  background: var(--uc-bg-color) !important;
   border: none !important;
 }
-.tab-background[selected="true"] {
-    background-color: var(--mff-tab-selected-bg) !important;
-}
 #urlbar[breakout][breakout-extend] {
-    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
-    left: 0 !important;
-    width: 100% !important;
+  background: var(--mff-urlbar-focused-color) !important;
+  left: 0 !important;
+  width: 100% !important;
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
-    height: var(--urlbar-height) !important;
-    padding-block: 0 !important;
-    padding-inline: 0 !important;
+  height: var(--urlbar-height) !important;
+  padding-block: 0 !important;
+  padding-inline: 0 !important;
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {
-    animation-name: none !important;
-    box-shadow: none !important;
+  animation-name: none !important;
+  box-shadow: none !important;
 }
 #urlbar-background {
   box-shadow: none !important;
@@ -93,10 +95,11 @@
   display: var(--uc-show-new-tab-button) !important;
 }*/
 .tabbrowser-tab::after {
-  border-left: var(--uc-tab-separators-width) solid var(--uc-tab-separators-color) !important;
+  border-left: var(--uc-tab-separators-width) solid
+    var(--uc-tab-separators-color) !important;
   display: var(--uc-show-tab-separators) !important;
 }
-.tabbrowser-tab[first-visible-tab][last-visible-tab]{
+.tabbrowser-tab[first-visible-tab][last-visible-tab] {
   background-color: var(--uc-bar-bg-color) !important;
 }
 .tab-close-button.close-icon {
@@ -128,9 +131,8 @@
 }
 
 .toolbarbutton-text {
-  color: var(--mff-icon-color)  !important;
+  color: var(--mff-icon-color) !important;
 }
 .urlbar-icon {
-  color: var(--mff-icon-color)  !important;
-
+  color: var(--mff-icon-color) !important;
 }

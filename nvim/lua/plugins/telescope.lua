@@ -45,10 +45,18 @@ return {
             local builtin = require("telescope.builtin")
 
             vim.keymap.set("n", "<F6>", builtin.find_files, {})
-            vim.keymap.set("n", "<F29>", builtin.live_grep, {})
-            vim.keymap.set("n", "<F30>", builtin.help_tags, {})
+            vim.keymap.set("n", "<S-F5>", builtin.live_grep, {})
+            vim.keymap.set("n", "<S-F6>", builtin.help_tags, {})
             require("telescope").load_extension("ui-select")
             require("telescope").load_extension("project")
         end,
+    },
+    {
+        "folke/todo-comments.nvim",
+        config = function()
+            local todo = require("todo-comments")
+            vim.keymap.set("n", "<S-F7>",  "<cmd>TodoTelescope<CR>", {})
+            todo.setup()
+        end
     },
 }

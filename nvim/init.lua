@@ -15,4 +15,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- vim.cmd 'source syntax/pop.vim'
+vim.cmd 'autocmd BufRead,BufNewFile *.pop set filetype=pop'
+
 require("lazy").setup("plugins")

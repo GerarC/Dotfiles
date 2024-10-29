@@ -121,3 +121,5 @@ def autostart():
 def client_new(client):
     if client.name == 'Spotify':
         client.togroup(9)#('  ')
+    if client.name == 'Firefox':
+        client.togroup(2)#('  ')

@@ -3,7 +3,8 @@ return {
         "williamboman/mason.nvim",
         config = function()
             require("mason").setup()
-		    vim.keymap.set("n", "<S-F12>", "<cmd>Mason<cr>")
+            vim.keymap.set("n", "<S-F12>", "<cmd>Mason<cr>")
+            vim.keymap.set("n", "<F24>", "<cmd>Mason<cr>")
         end,
     },
     {
@@ -19,7 +20,8 @@ return {
                 ensure_installed = {
                     "lua_ls",
                     "clangd",
-                    "tsserver",
+                    "ts_ls",
+                    "angularls",
                 },
             })
         end,
@@ -30,15 +32,51 @@ return {
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
             local lspconfig = require("lspconfig")
-            lspconfig.tsserver.setup({
+            lspconfig.ts_ls.setup({
                 capabilities = capabilities,
             })
             lspconfig.clangd.setup({
                 capabilities = capabilities,
+                settings = {
+                    clangd = {
+                        rangeVariableType = true,
+                        parameterNames = true,
+                        constantValues = true,
+                        assignVariableTypes = true,
+                        compositeLiteralFields = true,
+                        compositeLiteralTypes = true,
+                        functionTypeParameters = true,
+                    },
+                },
             })
+
+            lspconfig.tailwindcss.setup({
+                capabilities = capabilities,
+            })
+
+            lspconfig.basedpyright.setup({
+                capabilities = capabilities,
+            })
+
             lspconfig.lua_ls.setup({
                 capabilities = capabilities,
             })
+
+            local angularls_cmds = require("config.lsp.angularls")
+
+            lspconfig.angularls.setup({
+                cmds = angularls_cmds,
+                capabilities = capabilities,
+                filetypes = {
+                    "typescript",
+                    "html",
+                },
+                on_new_config = function(new_config, _)
+                    new_config.cmd = angularls_cmds
+                end,
+            })
+
+            -- servers
 
             local opts = { noremap = true, silent = true }
             vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
@@ -58,5 +96,15 @@ return {
             vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
             vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, opts)
         end,
+        opts = {
+            inlay_hints = { enabled = false },
+            servers = {
+                angularls = {
+                    root_dir = function(fname)
+                        return require("lspconfig.util").root_pattern("angular.json", "project.json")(fname)
+                    end,
+                },
+            },
+        },
     },
 }

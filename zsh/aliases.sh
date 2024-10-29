@@ -9,6 +9,7 @@ alias trash='rm -rf ~/.local/share/Trash/{files,info}/*'
 alias rzsh='source ~/.zshrc'
 
 # Package Administration
+alias pacl='pacman -Qeq | fzf --preview "pacman -Si {}" | xargs -ro sudo pacman -Rsun'
 alias pacf='pacman -Slq | fzf --preview "pacman -Si {}" | xargs -ro sudo pacman -S'
 alias yaf='yay -Slq | fzf --preview "yay -Si {}" | xargs -ro yay -S'
 
@@ -20,8 +21,8 @@ alias rcd='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; 
 
 # Pose
 alias pls='clear && please'
-alias neo='clear && neofetch'
-alias npls='clear && neofetch && please'
+alias neo='clear && fastfetch'
+alias npls='clear && fastfetch && please'
 
 # File View
 alias token='cat ~/Documents/.token'
