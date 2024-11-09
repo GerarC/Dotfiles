@@ -18,6 +18,7 @@ alias work='cd ~/Workspace'
 alias qtc='cd ~/.config/qtile'
 alias trashfolder='cd ~/.local/share/Trash/files'
 alias rcd='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias fwork='cd $(ls ~/Workspace | fzf --preview "cat ~/Workspace/{}/README.md" |  sed "s#\(.*\)#$(ls -d ~)/Workspace/\1#")'
 
 # Pose
 alias pls='clear && please'
