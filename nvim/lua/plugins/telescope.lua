@@ -48,7 +48,7 @@ return {
             vim.keymap.set("n", "<S-F5>", builtin.live_grep, {})
             vim.keymap.set("n", "<S-F6>", builtin.help_tags, {})
             require("telescope").load_extension("ui-select")
-            require("telescope").load_extension("project")
+            require "telescope".load_extension("project")
         end,
     },
     {
