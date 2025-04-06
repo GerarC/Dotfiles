@@ -2178,6 +2178,6 @@ default_pointer_shape arrow
 
 
 # BEGIN_KITTY_THEME
-# duckbones
+# Rosé Pine
 include current-theme.conf
 # END_KITTY_THEME

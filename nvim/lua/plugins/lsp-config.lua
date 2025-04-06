@@ -21,7 +21,7 @@ return {
                     "lua_ls",
                     "clangd",
                     "ts_ls",
-                    "angularls",
+                    "pyright"
                 },
             })
         end,
@@ -61,21 +61,9 @@ return {
             lspconfig.lua_ls.setup({
                 capabilities = capabilities,
             })
-
-            local angularls_cmds = require("config.lsp.angularls")
-
-            lspconfig.angularls.setup({
-                cmds = angularls_cmds,
+            lspconfig.pyright.setup({
                 capabilities = capabilities,
-                filetypes = {
-                    "typescript",
-                    "html",
-                },
-                on_new_config = function(new_config, _)
-                    new_config.cmd = angularls_cmds
-                end,
             })
-
             -- servers
 
             local opts = { noremap = true, silent = true }
