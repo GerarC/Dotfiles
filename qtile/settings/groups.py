@@ -1,11 +1,12 @@
 from libqtile.config import Group, Match
+from settings.common import *
 
 #################################################################
 # GROUPS
 #################################################################
 
 # Nerd font list 
-# 1. nf-linux-archlinux 
+# 1. nf-linux-fedora 
 # 2. nf-fa-firefox 
 # 3. nf-fa-terminal 
 # 4. nf-fa-code 
@@ -17,14 +18,14 @@ from libqtile.config import Group, Match
 # 10. nf-fa-dropbox 
 
 groups = [
-    Group('  '),
-    Group('  ', matches=[Match(wm_class=['firefox'])]),
-    Group('  ', matches=[Match(wm_class=['obsidian'])]),
+    Group('  '),
+    Group('  ', matches=[Match(wm_class=browser), Match(wm_class='Navigator')]),
+    Group('  ', matches=[Match(wm_class=note_taking)]),
     Group('  '),
     Group('  '),
     Group('  '),
     Group('  '),
-    Group('  ', matches=[Match(wm_class=['thunderbird'])]),
-    Group('  ', matches=[Match(wm_class=['TelegramDesktop']), Match(wm_class=['telegram-desktop'])]),
+    Group('  ', matches=[Match(wm_class=mailing)]),
+    Group('  ', matches=[Match(wm_class='TelegramDesktop'), Match(wm_class='telegram-desktop')]),
     Group('  '),
 ]

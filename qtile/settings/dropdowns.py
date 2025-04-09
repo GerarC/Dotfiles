@@ -8,7 +8,7 @@ from settings.common import *
 #################################################################
 
 groups.extend([
-    ScratchPad('scratch',
+    ScratchPad(dropdown_group,
                [
                    DropDown(
                        'term',
@@ -46,8 +46,8 @@ groups.extend([
 
 keys.extend(
     [
-        Key([], 'F2', lazy.group['scratch'].dropdown_toggle('term')),
-        Key([], 'F10', lazy.group['scratch'].dropdown_toggle('spot')),
-        Key([alt], 'F2', lazy.group['scratch'].dropdown_toggle('pavu')),
+        Key([], 'F2', lazy.group[dropdown_group].dropdown_toggle('term')),
+        Key([], 'F10', lazy.group[dropdown_group].dropdown_toggle('spot')),
+        Key([alt], 'F2', lazy.group[dropdown_group].dropdown_toggle('pavu')),
     ]
 )

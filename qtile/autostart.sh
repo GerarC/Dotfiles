@@ -5,7 +5,7 @@ setxkbmap latam -option caps:swapescape & # Key map with caps and scape alternat
 
 
 # Resolution
-xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off
+xrandr --output eDP-1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output HDMI-1 --off
 
 #System Icons
 
@@ -16,16 +16,16 @@ udiskie -t &
 nm-applet &
 
 #Volume
-volumeicon &
+sleep 2 && volumeicon &
 
 #Battery
-cbatticon -u 5 &
+battray &
 
 #Wallpaper
 # nitrogen --restore &
 
 # Live Wallpaper
-xwinwrap -ov -g 1920x1080+0+0 -- mpv -wid WID ~/.dotfiles/wallpapers/live/Chill-wallpaper.mp4 --no-osc --no-osd-bar --loop-file --player-operation-mode=cplayer --no-audio --panscan=1.0 --no-input-default-bindings &
+xwinwrap -ov -g 1366x768+0+0 -- mpv -wid WID ~/.dotfiles/wallpapers/live/Chill-wallpaper.mp4 --no-osc --no-osd-bar --loop-file --player-operation-mode=cplayer --no-audio --panscan=1.0 --no-input-default-bindings &
 
 #Picom
 picom --vsync --backend glx --xrender-sync-fence &

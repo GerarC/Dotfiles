@@ -2,7 +2,7 @@ local g = vim.g
 
 if g.neovide then
     -- Transparency
-	g.neovide_transparency = 1.0
+	g.neovide_opacity = 1.0
 
     -- Cursor animation
     g.neovide_cursor_animation_lenght = 0.13
@@ -18,5 +18,5 @@ if g.neovide then
     -- Font and theme
 	vim.o.background = "dark"
 	vim.o.termguicolors = true
-	vim.o.guifont = "CaskaydiaCove Nerd Font Mono:h7.5"
+	vim.o.guifont = "CaskaydiaCove Nerd Font Mono:h11"
 end

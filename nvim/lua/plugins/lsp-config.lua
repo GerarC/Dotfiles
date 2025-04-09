@@ -54,10 +54,6 @@ return {
                 capabilities = capabilities,
             })
 
-            lspconfig.basedpyright.setup({
-                capabilities = capabilities,
-            })
-
             lspconfig.lua_ls.setup({
                 capabilities = capabilities,
             })

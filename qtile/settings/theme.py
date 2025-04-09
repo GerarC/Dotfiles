@@ -7,12 +7,12 @@ from settings.colorscheme import palette
 fonts = {
     'default': 'CaskaydiaCove Nerd Font',
     'powerline': 'Source Code Pro',
-    'size': 14
+    'size': 13
 }
 
 bar_theme = {
     'color': palette[0],
-    'size': 24,
+    'size': 16,
     'margin': 6,
     'border_width': 0,
 }
@@ -22,7 +22,7 @@ theme = {
     'background': palette[0],
     'active': palette[5],
     'inactive': palette[1],
-    'icon_size': 18,
+    'icon_size': 16,
 }
 
 group_box = {
@@ -62,7 +62,7 @@ float_window = {
 }
 
 icons = {
-    'size': 18,
+    'size': 16,
     'therm': '  ',
     'ram': '  ',
     'updates': ' ',
