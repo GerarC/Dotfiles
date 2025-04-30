@@ -63,7 +63,7 @@ main_bar = bar.Bar(
         widget.ThermalSensor(
             foreground=theme['foreground'],
             background=group_colors[2],
-            threshold=50,
+            threshold=70,
             fmt= '{}'
         ),
         set_icon(
